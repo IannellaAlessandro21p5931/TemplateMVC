@@ -24,6 +24,22 @@
                 }
             }
             $this->params = $url ? array_values($url) : [];
+
+            /*print_r($this->params);
+            exit;*/
+            echo '<table>';
+            foreach($this->params as $p) {
+                echo '<tr>';
+                echo '<td>';
+                if($p == 'image') {
+                    //echo '<img src=''>';
+                }
+                echo $p;
+                echo '</td>';
+                echo '</tr>';
+            }
+            echo '</table>';
+
             call_user_func_array([$this->controller, $this->method], $this->params);
         }
 
