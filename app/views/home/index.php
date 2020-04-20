@@ -1,14 +1,13 @@
 <?= 
-'Hallo '. $data['user']->name; 
+//'Hallo '. $data['user']->name; 
+''
 ?>
+
+<!DOCTYPE html>
 <html>
-
-<head>
-    
-</head>
-
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js"></script>
 <body>
-<button type="button">Click Me!</button>
+<button onclick="openSecondPage()" class="button" >Start</button>
 </body>
-
 </html>
