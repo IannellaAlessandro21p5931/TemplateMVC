@@ -1,4 +1,4 @@
-html {
+form {
     background-color: blue;
 }
 
@@ -7,5 +7,11 @@ html {
     height: 100%;
     background-color: blue;
     color: white;
-    /*border*/
+}
+
+.button_ {
+    width: 40%;
+    height: 30%;
+    background-color: blue;
+    color: white;
 }

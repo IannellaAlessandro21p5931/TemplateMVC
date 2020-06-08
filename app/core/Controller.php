@@ -6,9 +6,15 @@
             return new $model();
         }
 
-        public function view($view, $data) {
-            //print_r($data);
+        public function view($view, $data = []) {
             require_once('../app/views/' . $view . '.php');   
+        }
+
+        public function goto($controller, $method, $args = []) {
+            $base = '/TemplateMVC/public';
+            $location = 'http://' . $_SERVER['HTTP_HOST'] . $base . "/" . $controller . "/" . $method . "/" . implode("/", $args);
+            header("Location: " . $location);
+            exit;
         }
     }
 ?>
