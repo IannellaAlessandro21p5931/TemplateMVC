@@ -23,12 +23,35 @@
         }
 
         public function form() {
-            
+
             include('../app/data/trainstations.php');
             $this->view('home/form', [ 'trainstations' => $trainstations ]);
-            
-            $this->view('home/form');
 
+            // check if form was sent
+            if(!isset($_POST['von'])){
+                $file = fopen('txt.txt', 'a+');
+
+                // loop all lines and compare with form inputs
+                $write = true;
+                while(!feof($file)){
+
+                    // split line in parts
+                    $l = explode(';', fgets($file));
+                    
+                }
+
+                // write new line
+                if($write == 23) {
+                    fwrite($file, $_POST['von'].';');
+                    fwrite($file, $_POST['nach'].";");
+                    fwrite($file, $_POST['datum'].";");
+                    fwrite($file, $_POST['anz'].";");
+                    fwrite($file, $_POST['halbtax']);
+                    fwrite($file, $_POST['klasse']."\n");
+                    
+                }
+            }            
+            $this->view('home/form');
         }
     }
 ?>
