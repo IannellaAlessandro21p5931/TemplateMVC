@@ -28,7 +28,7 @@
             $this->view('home/form', [ 'trainstations' => $trainstations ]);
 
             // check if form was sent
-            if(!isset($_POST['von'])){
+            if(isset($_POST['submit'])){
                 $file = fopen('txt.txt', 'a+');
 
                 // loop all lines and compare with form inputs
@@ -52,6 +52,18 @@
                 }
             }            
             $this->view('home/form');
+        }
+
+        public function form_t() {
+            $this->view('home/form_t');
+        }
+
+        public function form_o() {
+            $this->view('home/form_o');
+        }
+
+        public function form_s() {
+            $this->view('home/form_s');
         }
     }
 ?>
