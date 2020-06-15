@@ -47,7 +47,7 @@
                     <input disabled type="radio" name="halbtax"> Ja</input>
                     </p>
                     <p style="padding: 5px;">
-                    <input type="radio" name="halbtax" checked> Nein</input>
+                    <input type="radio" name="halbtax" value="1" checked> Nein</input>
                     </p>
                 </div>
 
@@ -57,14 +57,14 @@
                     <input disabled type="radio" name="klasse"> 1. Klasse</input>
                     </p>
                     <p style="padding: 5px;">
-                    <input type="radio" name="klasse" checked> 2. Klasse</input>
+                    <input type="radio" name="klasse" value="1" checked> 2. Klasse</input>
                     </p>
                 </div>
 
                 <div style="padding: 10px;">
                     Typ
                     <p style="padding: 5px;">
-                    <input type="radio" name="typ" checked> Speziell</input>
+                    <input type="radio" name="typ" value="1" checked> Speziell</input>
                     </p>
                 </div>
             </div>

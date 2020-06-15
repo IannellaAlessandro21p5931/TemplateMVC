@@ -465,6 +465,7 @@
                         }
                     }
                 }
+                $this->goto('home', 'start');
             }
         }
 
@@ -911,6 +912,7 @@
                         }
                     }
                 }
+                $this->goto('home', 'start');
             }
         }
 
@@ -1357,6 +1359,7 @@
                         }
                     }
                 }
+                $this->goto('home', 'start');
             }
         }
     }
