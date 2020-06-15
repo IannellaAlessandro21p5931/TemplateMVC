@@ -1,4 +1,4 @@
-<form class="form" action="TemplateMVC/public/home/form_t" method="POST">
+<form class="form" action="http://localhost/TemplateMVC/public/home/form_t" method="POST">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -44,27 +44,27 @@
                 <div style="padding: 10px;">
                     Halbtax
                     <p style="padding: 5px; margin-top: 5px;">
-                    <input type="radio" name="halbtax"> Ja</input>
+                    <input type="radio" name="halbtax" value="2"> Ja</input>
                     </p>
                     <p style="padding: 5px;">
-                    <input type="radio" name="halbtax" checked> Nein</input>
+                    <input type="radio" name="halbtax" value="1" checked> Nein</input>
                     </p>
                 </div>
 
                 <div style="padding: 10px;">
                     Klasse
                     <p style="padding: 5px; margin-top: 5px;">
-                    <input type="radio" name="klasse"> 1. Klasse</input>
+                    <input type="radio" name="klasse" value="2"> 1. Klasse</input>
                     </p>
                     <p style="padding: 5px;">
-                    <input type="radio" name="klasse" checked> 2. Klasse</input>
+                    <input type="radio" name="klasse" value="1" checked> 2. Klasse</input>
                     </p>
                 </div>
 
                 <div style="padding: 10px;">
                     Typ
                     <p style="padding: 5px;">
-                    <input type="radio" name="typ" checked> Tageskarte</input>
+                    <input type="radio" name="typ" value="4" checked> Tageskarte</input>
                     </p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
     </div>
     
     <div style="padding: 20px; margin-top: 5%">
-        <button style="width: 100%; background-color: #0099ff" class="btn btn-primary" value="submit" type="submit">Submit</button>
+        <input style="width: 100%; background-color: #0099ff" class="btn btn-primary" name="submit" value="submit" type="submit">
     </div>
 
 </form>

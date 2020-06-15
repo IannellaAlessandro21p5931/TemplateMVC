@@ -1,4 +1,4 @@
-<form class="form" action="TemplateMVC/public/home/form_s" method="POST">
+<form class="form" action="http://localhost/TemplateMVC/public/home/form_s" method="POST">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -74,7 +74,7 @@
 
     
     <div style="padding: 20px; margin-top: 5%">
-        <button style="width: 100%; background-color: #0099ff" class="btn btn-primary" value="submit" type="submit">Submit</button>
+        <button style="width: 100%; background-color: #0099ff" class="btn btn-primary" name="submit" value="submit" type="submit">Submit</button>
     </div>
 
 </form>

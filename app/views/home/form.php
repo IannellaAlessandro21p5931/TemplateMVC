@@ -65,7 +65,7 @@
     </div>
     
     <div style="padding: 20px; margin-top: 5%">
-        <button style="width: 100%; background-color: #0099ff" class="btn btn-primary" value="submit" type="submit">Submit</button>
+        <button style="width: 100%; background-color: #0099ff" class="btn btn-primary" name="submit" value="submit" type="submit">Submit</button>
     </div>
 
 </form>

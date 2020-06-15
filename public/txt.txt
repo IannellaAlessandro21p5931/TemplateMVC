@@ -1,0 +1,10 @@
+DARSTELLUNG BILLET IM TXT FILE
+Von (0: Frauenfeld, 1: Kreuzlingen, 2: Oberaach, 3: Romanshorn);
+    Nach (0: Frauenfeld, 1: Kreuzlingen, 2: Oberaach, 3: Romanshorn);
+        Datum;
+            Anzahl Billets;
+                Halbtax (2: Ja; 1: Nein);
+                    Klasse (2: 1.Klasse, 1: 2.Klasse);
+                        Typ (1: Speziell/OneWay, 4: Tageskarte);
+                            Preis
+----------------------------------------------------------------------
